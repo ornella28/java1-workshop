@@ -4,9 +4,21 @@ import java.util.Scanner;
 
 public class calculatorApplication {
 
+    Scanner scanner = new Scanner(System.in);//reads inputs
+
+    public static double readNumber(Scanner scanner) { //to be used to handle wrong inputs
+
+        while (!scanner.hasNextDouble()) { // will be executed as long as it is a number
+            System.out.println("Invalid input. Please enter a number: ");
+            scanner.next();//removes bad input
+            System.out.println("Enter a number: ");
+        }
+        return scanner.nextDouble();// gives back the input
+    }
+
     void main() {
 
-        Scanner scanner = new Scanner(System.in);
+
 
 
         String answer;//for storing yes or no
@@ -14,10 +26,10 @@ public class calculatorApplication {
         do { // the program will perform this code as long as the answer will be yes
 
             System.out.println("Please enter the first number: ");
-            double number1 = scanner.nextDouble();// because i declared a double
-
+            //double number1 = scanner.nextDouble();// because i declared a double
+            double number1 = readNumber(scanner);
             System.out.println("Please enter the second number: ");
-            double number2 = scanner.nextDouble();
+            double number2 = readNumber(scanner);
 
             System.out.println("Please choose the operation: " + " + " + " - " + " * " + " / ");
             char operation = scanner.next().charAt(0); //to store the mathematic operation
