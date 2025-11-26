@@ -14,10 +14,10 @@ public class calculatorApplication {
         do { // the program will perform this code as long as the answer will be yes
 
             System.out.println("Please enter the first number: ");
-            double number1 = scanner.nextInt();
+            double number1 = scanner.nextDouble();// because i declared a double
 
             System.out.println("Please enter the second number: ");
-            double number2 = scanner.nextInt();
+            double number2 = scanner.nextDouble();
 
             System.out.println("Please choose the operation: " + " + " + " - " + " * " + " / ");
             char operation = scanner.next().charAt(0); //to store the mathematic operation
