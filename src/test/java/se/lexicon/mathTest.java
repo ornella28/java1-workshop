@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class mathTest {
+public class mathTest { // for testing advanced mathematic
 
     @Test
     void testPower(){ // testing Power
