@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class calculatorApplication {
 
     Scanner scanner = new Scanner(System.in);//reads inputs
-
+// a class to check if the number entered by the user is valid
     public static double readNumber(Scanner scanner) { //to be used to handle wrong inputs
 
         while (!scanner.hasNextDouble()) { // will be executed as long as it is a number
@@ -63,4 +63,22 @@ public class calculatorApplication {
 
 
     }
+
+    public static double addition(double number1, double number2) { //addition is declared first here to be able to use it in test
+        return number1 + number2;
+    }
+
+    public static double multiplication(double number1, double number2) { // multiplication is declared first here to be able to use it in test
+        return number1 * number2;
+    }
+
+    public static double subtraction(double number1, double number2) {
+        return number1 - number2;
+    }
+
+    public static double division(double number1, double number2) {
+        return number1 / number2;
+    }
+
+
 }
