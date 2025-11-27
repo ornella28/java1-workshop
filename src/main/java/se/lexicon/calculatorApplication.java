@@ -63,7 +63,7 @@ public class calculatorApplication {
 
 
     }
-
+  // declaring mathematical operations here to conduct tests
     public static double addition(double number1, double number2) { //addition is declared first here to be able to use it in test
         return number1 + number2;
     }
@@ -78,6 +78,16 @@ public class calculatorApplication {
 
     public static double division(double number1, double number2) {
         return number1 / number2;
+    }
+
+    // this will be declared to perform advanced mathematic operations
+
+    public static double power(double base, double exponent) {
+        return Math.pow(base, exponent); // to perform a^b
+    }
+
+    public static double sin(double number) {
+        return Math.sin(number);
     }
 
 
